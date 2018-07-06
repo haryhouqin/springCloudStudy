@@ -17,7 +17,7 @@ public class DemoApplication {
     }
 
     @Bean
-    public MyFilter myFilter(){
+    public MyFilter myFilter() {
         return new MyFilter();
     }
 }
