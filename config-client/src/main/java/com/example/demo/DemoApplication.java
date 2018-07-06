@@ -16,10 +16,12 @@ public class DemoApplication {
     public static void main(String[] args) {
         SpringApplication.run(DemoApplication.class, args);
     }
+
     @Value("${foo}")
     String foo;
+
     @RequestMapping(value = "/hi")
-    public String hi(){
+    public String hi() {
         return foo;
     }
 }
