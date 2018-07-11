@@ -17,5 +17,10 @@ public class HelloController {
         return helloService.hiService(name);
     }
 
+    @RequestMapping(value = "/getAll")
+    public String getAll(String name) {
+        return helloService.get(name);
+    }
+
 
 }
